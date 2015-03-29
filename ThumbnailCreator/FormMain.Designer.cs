@@ -42,8 +42,8 @@
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.löschenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.thumbnailErstellenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.createThumbnailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.checkBoxKeepRatio = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -209,24 +209,24 @@
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.löschenToolStripMenuItem,
-            this.thumbnailErstellenToolStripMenuItem});
+            this.deleteToolStripMenuItem,
+            this.createThumbnailToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(209, 52);
             // 
-            // löschenToolStripMenuItem
+            // deleteToolStripMenuItem
             // 
-            this.löschenToolStripMenuItem.Name = "löschenToolStripMenuItem";
-            this.löschenToolStripMenuItem.Size = new System.Drawing.Size(208, 24);
-            this.löschenToolStripMenuItem.Text = "löschen";
-            this.löschenToolStripMenuItem.Click += new System.EventHandler(this.löschenToolStripMenuItem_Click);
+            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(208, 24);
+            this.deleteToolStripMenuItem.Text = "löschen";
+            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
-            // thumbnailErstellenToolStripMenuItem
+            // createThumbnailToolStripMenuItem
             // 
-            this.thumbnailErstellenToolStripMenuItem.Name = "thumbnailErstellenToolStripMenuItem";
-            this.thumbnailErstellenToolStripMenuItem.Size = new System.Drawing.Size(208, 24);
-            this.thumbnailErstellenToolStripMenuItem.Text = "Thumbnail erstellen";
-            this.thumbnailErstellenToolStripMenuItem.Click += new System.EventHandler(this.thumbnailErstellenToolStripMenuItem_Click);
+            this.createThumbnailToolStripMenuItem.Name = "createThumbnailToolStripMenuItem";
+            this.createThumbnailToolStripMenuItem.Size = new System.Drawing.Size(208, 24);
+            this.createThumbnailToolStripMenuItem.Text = "Thumbnail erstellen";
+            this.createThumbnailToolStripMenuItem.Click += new System.EventHandler(this.createThumbnailToolStripMenuItem_Click);
             // 
             // checkBoxKeepRatio
             // 
@@ -384,8 +384,8 @@
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem löschenToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem thumbnailErstellenToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem createThumbnailToolStripMenuItem;
         private System.Windows.Forms.ComboBox comboBoxDimension;
         private System.Windows.Forms.CheckBox checkBoxKeepRatio;
         private System.Windows.Forms.Label label3;

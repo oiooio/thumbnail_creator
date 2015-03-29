@@ -122,11 +122,11 @@ namespace ThumbnailCreator
                     }
                     else if (comboBoxDimension.Text == "Breite")
                     {
-                        Thumbnail.Create(Image.FromFile(selectedImagePath), Convert.ToInt32(numericUpDownWidth.Value), Thumbnail.Dimension.Width, checkBoxKeepRatio.Checked, settings.Quality).Save(newFileName);
+                        Thumbnail.Create(Image.FromFile(selectedImagePath), Thumbnail.Dimension.Width,Convert.ToInt32(numericUpDownWidth.Value), checkBoxKeepRatio.Checked, settings.Quality).Save(newFileName);
                     }
                     else if (comboBoxDimension.Text == "Höhe")
                     {
-                        Thumbnail.Create(Image.FromFile(selectedImagePath), Convert.ToInt32(numericUpDownHeight.Value), Thumbnail.Dimension.Height, checkBoxKeepRatio.Checked, settings.Quality).Save(newFileName);
+                        Thumbnail.Create(Image.FromFile(selectedImagePath), Thumbnail.Dimension.Height, Convert.ToInt32(numericUpDownHeight.Value), checkBoxKeepRatio.Checked, settings.Quality).Save(newFileName);
                     }
                     log.AppendMessage("Created thumbnail \""+newFileName+"\" from file \""+selectedImagePath+"\".");
                 }
@@ -151,7 +151,7 @@ namespace ThumbnailCreator
             }
         }
 
-        private void löschenToolStripMenuItem_Click(object sender, EventArgs e)
+        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try
             {
@@ -169,7 +169,7 @@ namespace ThumbnailCreator
 
         }
 
-        private void thumbnailErstellenToolStripMenuItem_Click(object sender, EventArgs e)
+        private void createThumbnailToolStripMenuItem_Click(object sender, EventArgs e)
         {
             buttonCreateThumbnail_Click(sender, e);
         }
